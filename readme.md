@@ -18,16 +18,16 @@ Minimal TypeScript + Jest (ESM) starter.
 ```jsonc
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
+      "target": "ESNext",
+    "module": "ESNext",                    // changed from CommonJS
+    "moduleResolution": "node",            // add for proper resolution
     "outDir": "dist",
     "esModuleInterop": true,
     "strict": true,
     "skipLibCheck": true,
     "resolveJsonModule": true
   },
-  "exclude": ["node_modules", "__test__"]
+  "exclude": ["node_modules", "./*.ts", "__test__"]
 }
 ```
 
